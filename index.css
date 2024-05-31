@@ -434,7 +434,7 @@ ul {
   width: 80%;
   display: flex;
   gap: 8.08px;
-  justify-content: start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 @media screen and (max-width: 700px) {
@@ -515,7 +515,7 @@ ul {
   }
   .single_tools,
   .second_tool {
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     width: 100%;
   }
@@ -526,9 +526,15 @@ ul {
     text-align: center;
     justify-content: space-around;
   }
-  @media (min-width: 701px) and (max-width: 1200px) {
-    .aside_container {
-      width: 100%;
-    }
+}
+@media (min-width: 531px) and (max-width: 800px) {
+  .contacts > h2 {
+    width: 100%;
+    grid-column: span 2 / span 2;
+  }
+  .contacts {
+    display: grid;
+    align-content: end;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
