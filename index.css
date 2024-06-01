@@ -30,7 +30,6 @@ h2 {
 }
 
 .side_content {
-  position: sticky;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,11 +101,8 @@ img {
   object-fit: contain;
 }
 .aside_container {
-  position: sticky;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  top: 0px;
   width: 30%;
   min-width: 350px;
   background-color: #f7f9fc;
@@ -148,6 +144,7 @@ img {
 }
 .section > ul {
   padding: 4.618rem;
+  width: 100%;
 }
 ul {
   position: relative;
@@ -180,15 +177,16 @@ ul {
   padding-bottom: 0;
 }
 .projects {
+  width: 80%;
   padding: 5px 0px 64.65px 32.32px;
 }
 .project {
   padding: 24.24px;
   display: flex;
   gap: 20px;
-  width: 21.212rem;
+  /* width: 21.212rem;
 
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 .single_project {
   display: flex;
@@ -209,7 +207,7 @@ ul {
   gap: 20px;
 }
 .project_desc {
-  width: 24.675rem;
+  width: 100%;
 }
 .project_desc > p {
   font-size: 0.721rem;
@@ -475,6 +473,7 @@ ul {
   }
   .section > ul {
     padding: 20px;
+    width: auto;
   }
   .section {
     padding: 30px 0 0 0;
@@ -567,6 +566,7 @@ ul {
   }
   .section > ul {
     padding: 20px;
+    width: auto;
   }
   .section {
     padding: 30px 0 0 0;
