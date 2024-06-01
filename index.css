@@ -115,16 +115,16 @@ img {
   border-top: 2px solid #e2e6ee;
 }
 
-.sidebar-card {
+.sidebar__card {
   display: flex;
   gap: 15px;
   width: 100%;
 }
-.sidebar-card__right {
+.sidebar__card__right {
   display: flex;
   flex-direction: column;
 }
-.sidebar-card__title:last-child {
+.sidebar__card__title:last-child {
   color: #47516b;
 }
 
@@ -280,7 +280,7 @@ img {
 .skills-section__left {
   width: 20%;
 }
-.design-color {
+.skills-section--design-color {
   align-items: center;
   color: #9251f7;
   /* background-color: #f7f9fc; */
@@ -309,7 +309,7 @@ img {
   font-size: 1.154rem;
 }
 
-.devlopment-color {
+.skills-section--devlopment-color {
   color: #516cf7;
 }
 .skills-section__row:last-child {
