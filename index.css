@@ -1,3 +1,14 @@
+:root {
+  --primary-gray: #79819a;
+  --primary-blue: #516cf7;
+  --primary-light_purple: #9251f7;
+  --primary-purple: #5531a7;
+  --primary-dark_blue: #2e2e48;
+  --primary-light_gray: #f7f9fc;
+  --secondary_gray: #f7f9fc;
+  --primary_cream: #e2e6ee;
+}
+
 * {
   margin: 0px;
 }
@@ -10,13 +21,13 @@ body {
 p {
   font-family: "DM Sans", sans-serif;
 
-  color: #79819a;
+  color: var(--primary-gray);
   font-weight: 400;
 }
 a {
   text-decoration-line: none;
   text-decoration: none;
-  color: #516cf7;
+  color: var(--primary-blue);
   font-weight: 600;
   font-family: "Outfit", sans-serif;
 }
@@ -28,7 +39,7 @@ h1 {
 h2 {
   font-weight: 500;
   font-size: 1.154rem;
-  color: #2e2e48;
+  color: var(--primary-dark_blue);
 }
 ul {
   text-align: left;
@@ -52,7 +63,7 @@ ul {
 .sidebar__post {
   font-size: 1.731rem;
   font-weight: 500;
-  background: linear-gradient(90deg, #a478e8 0%, #516cf7 100%);
+  background: linear-gradient(90deg, #a478e8 0%, var(--primary-blue) 100%);
 
   background-clip: text;
   -webkit-background-clip: text;
@@ -60,7 +71,7 @@ ul {
 }
 
 .sidebar__quote {
-  color: #47516b;
+  color: var(--secondary_gray);
   font-weight: 500;
   font-size: 1.299rem;
   text-align: center;
@@ -102,7 +113,7 @@ img {
   flex-direction: column;
   width: 30%;
   min-width: 350px;
-  background-color: #f7f9fc;
+  background-color: var(--primary-light_gray);
   flex-basis: 356px;
 }
 .sidebar__contacts {
@@ -112,7 +123,7 @@ img {
   gap: 20px;
   padding-bottom: 20px;
   width: 80%;
-  border-top: 2px solid #e2e6ee;
+  border-top: 2px solid var(--primary_cream);
 }
 
 .sidebar__card {
@@ -125,11 +136,11 @@ img {
   flex-direction: column;
 }
 .sidebar__card__title:last-child {
-  color: #47516b;
+  color: var(--secondary_gray);
 }
 
 .main {
-  color: #2e2e48;
+  color: var(--primary-dark_blue);
   width: 80%;
   padding: 4.618rem;
 
@@ -151,14 +162,14 @@ img {
   color: red;
   position: absolute;
   left: 25px;
-  background-color: #5531a7;
+  background-color: var(--primary-purple);
 
   box-shadow: 1px 1px 5px 0px rgb(204, 204, 204);
 }
 
 .main__list {
   list-style: none;
-  border-left: 2px solid #e2e6ee;
+  border-left: 2px solid var(--primary_cream);
   padding-left: 20px;
 }
 
@@ -181,7 +192,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #f7f9fc;
+  background-color: var(--primary-light_gray);
   width: 100%;
 }
 .projects-section__card:first-child {
@@ -200,7 +211,7 @@ img {
 }
 .projects-section__card__desc__paragraph {
   font-size: 0.721rem;
-  color: #79819a;
+  color: var(--primary-gray);
   font-weight: 400;
   margin-top: 5px;
 }
@@ -234,12 +245,12 @@ img {
 }
 .experience-section__left__role {
   font-size: 0.866rem;
-  color: #79819a;
+  color: var(--primary-gray);
 }
 
 .experience-section__left__name {
   font-size: 1.01rem;
-  color: #2e2e48;
+  color: var(--primary-dark_blue);
   margin-top: 8px;
 }
 .education-section__card__top {
@@ -263,7 +274,7 @@ img {
 .education-section__card {
   flex-grow: 0.2;
   width: max-content;
-  background-color: #f7f9fc;
+  background-color: var(--primary-light_gray);
   padding: 16.16px 24.24px 16.16px 24.24px;
   border-radius: 8.08px 0px 0px 8.08px;
 }
@@ -282,14 +293,13 @@ img {
 }
 .skills-section--design-color {
   align-items: center;
-  color: #9251f7;
-  /* background-color: #f7f9fc; */
+  color: var(--primary-light_purple);
 }
 .skills-section {
   padding: 30px 0px 48.48px 0px;
 }
 .border-last {
-  border-left: 2px solid #e2e6ee;
+  border-left: 2px solid var(--primary_cream);
 }
 .skills-section__container {
   height: 70px;
@@ -298,7 +308,7 @@ img {
   display: flex;
   color: inherit;
   text-align: center;
-  background-color: #f7f9fc;
+  background-color: var(--primary-light_gray);
 
   justify-content: center;
   align-items: center;
@@ -310,7 +320,7 @@ img {
 }
 
 .skills-section--devlopment-color {
-  color: #516cf7;
+  color: var(--primary-blue);
 }
 .skills-section__row:last-child {
   margin: 20px 0px;
@@ -331,7 +341,7 @@ img {
   text-align: center;
   margin: auto;
   width: 50%;
-  border-top: 2px solid #e2e6ee;
+  border-top: 2px solid var(--primary_cream);
 }
 .tools-section__container {
   display: flex;
@@ -339,7 +349,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: 1.154rem;
-  background-color: #f7f9fc;
+  background-color: var(--primary-light_gray);
   border-radius: 8.08px 0px 0px 0px;
   width: 12.049rem;
   height: 9.235rem;
