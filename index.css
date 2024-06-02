@@ -142,9 +142,9 @@ img {
 
 .main {
   color: var(--primary-dark_blue);
-  width: 80%;
+  width: 70%;
   padding: 4.618rem;
-
+  margin: auto;
   /* padding: 4.618rem; */
 }
 
@@ -184,7 +184,7 @@ img {
 .projects-section__card__header {
   padding: 24.24px;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   /* width: 21.212rem;
 
   justify-content: space-between; */
@@ -194,7 +194,7 @@ img {
   flex-direction: column;
   justify-content: flex-start;
   background-color: var(--primary-light_gray);
-  width: 100%;
+  /* width: 100%; */
 }
 .projects-section__card:first-child {
   border-radius: 8.08px 0px 0px 8.08px;
@@ -205,11 +205,11 @@ img {
 .projects-section {
   padding: 20px 0px;
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
-.projects-section__card__desc {
+/* .projects-section__card__desc {
   width: 100%;
-}
+} */
 .projects-section__card__desc__paragraph {
   font-size: 0.721rem;
   color: var(--primary-gray);
@@ -229,7 +229,8 @@ img {
 }
 .experience-section__left {
   display: flex;
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  flex: 1;
   flex-direction: column;
 }
 
@@ -238,6 +239,7 @@ img {
   font-size: 10.1px;
   line-height: 13.15px;
   text-align: left;
+  flex: 1;
 }
 .experience-section__left__comapny {
   display: flex;
@@ -263,6 +265,7 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 30px 0px 48.48px 0px;
+  gap: 10px;
 }
 
 .education-section__card__bottom {
@@ -273,7 +276,8 @@ img {
 }
 
 .education-section__card {
-  flex-grow: 0.2;
+  flex: 1;
+  /* flex-grow: 0.2; */
   width: max-content;
   background-color: var(--primary-light_gray);
   padding: 16.16px 24.24px 16.16px 24.24px;
@@ -379,6 +383,10 @@ img {
 }
 
 @media screen and (max-width: 500px) {
+  .main__list-wrapper {
+    position: relative;
+    padding: 6px;
+  }
   .tools-section__last-container {
     width: auto;
     height: 9.235rem;
@@ -400,7 +408,7 @@ img {
     width: 100%;
   }
   .main__list::before {
-    left: 25px;
+    left: -8px;
   }
 
   .projects-section__card__header {
@@ -458,12 +466,14 @@ img {
     align-items: flex-start;
     width: 100%;
   }
+  .main-sections {
+    padding: 5px 0px 64.65px 24.32px;
+  }
 }
 @media (min-width: 501px) and (max-width: 820px) {
   .main__list {
     padding: 0;
   }
-
   .main__list::before {
     left: 25px;
   }
