@@ -5,13 +5,14 @@
   --primary-purple: #5531a7;
   --primary-dark_blue: #2e2e48;
   --primary-light_gray: #f7f9fc;
-  --secondary_gray: #f7f9fc;
+  --secondary_gray: #47516b;
   --primary_cream: #e2e6ee;
 }
 
 * {
   margin: 0px;
 }
+
 body {
   font-family: "DM Sans", sans-serif;
   font-size: 14px;
@@ -379,7 +380,7 @@ img {
 
 @media screen and (max-width: 500px) {
   .tools-section__last-container {
-    width: 12.049rem;
+    width: auto;
     height: 9.235rem;
   }
   .main {
@@ -450,6 +451,7 @@ img {
   }
   .tools-section__container {
     padding: 20px;
+    flex: 1;
   }
   .tools-section {
     justify-content: center;
@@ -519,9 +521,9 @@ img {
     padding: 20px;
     width: 5rem;
     height: 8rem;
+    flex: 1;
   }
-  .tools-section,
-  .second_tool {
+  .tools-section {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
