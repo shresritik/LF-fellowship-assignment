@@ -91,7 +91,7 @@ ul {
   top: -10px;
   right: -20px;
 }
-.experience__list-wraper {
+.padding {
   padding: 10px;
   list-style: disc;
 }
@@ -151,7 +151,7 @@ img {
 .main__wrapper {
   position: relative;
 }
-.main-list::before {
+.timeline::before {
   content: "";
   border: 10px solid white;
   border-radius: 50%;
@@ -168,17 +168,17 @@ img {
   box-shadow: 1px 1px 5px 0px rgb(204, 204, 204);
 }
 
-.main-list {
+.timeline {
   list-style: none;
   border-left: 2px solid var(--primary_cream);
   padding-left: 20px;
 }
 
-.main-list:last-child {
+.timeline:last-child {
   border-left: none;
   padding-bottom: 0;
 }
-.main-sections {
+.timeline__sections {
   padding: 5px 0px 64.65px 32.32px;
 }
 .projects-section__card-header {
@@ -207,9 +207,7 @@ img {
   display: flex;
   gap: 10px;
 }
-/* .projects-section__card__desc {
-  width: 100%;
-} */
+
 .projects-section__card-paragraph {
   font-size: 0.721rem;
   color: var(--primary-gray);
@@ -275,7 +273,7 @@ img {
   gap: 3px;
 }
 
-.education-section-card {
+.education-section__card {
   flex: 1;
   /* flex-grow: 0.2; */
   width: max-content;
@@ -398,7 +396,7 @@ img {
   .section {
     width: 100%;
   }
-  .main-list {
+  .timeline {
     padding: 0;
   }
   .skills-section__left {
@@ -407,7 +405,7 @@ img {
     margin-bottom: 20px;
     width: 100%;
   }
-  .main-list::before {
+  .timeline::before {
     left: -8px;
   }
 
@@ -425,7 +423,7 @@ img {
   .experience-section__right {
     width: auto;
   }
-  .experience-section__left__name {
+  .experience-section__left-name {
     margin-top: 1px;
   }
   .education-section {
@@ -433,7 +431,7 @@ img {
     width: 100%;
     gap: 10px;
   }
-  .education-section-card {
+  .education-section__card {
     width: auto;
   }
   .skills-section__container {
@@ -466,15 +464,15 @@ img {
     align-items: flex-start;
     width: 100%;
   }
-  .main-sections {
+  .timeline__sections {
     padding: 5px 0px 64.65px 24.32px;
   }
 }
 @media (min-width: 501px) and (max-width: 820px) {
-  .main-list {
+  .timeline {
     padding: 0;
   }
-  .main-list::before {
+  .timeline::before {
     left: 25px;
   }
   .main {
@@ -496,7 +494,7 @@ img {
   .experience-section__right {
     width: auto;
   }
-  .experience-section__left__name {
+  .experience-section__left-name {
     gap: 1px;
   }
   .education-section {
@@ -504,7 +502,7 @@ img {
     width: 100%;
     gap: 10px;
   }
-  .education-section-card {
+  .education-section__card {
     width: auto;
   }
   .skills-section__container {
