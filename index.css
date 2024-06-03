@@ -148,7 +148,7 @@ img {
   /* padding: 4.618rem; */
 }
 
-.main__wrapper {
+.main__ul {
   position: relative;
 }
 .timeline::before {
@@ -379,9 +379,12 @@ img {
   flex-wrap: wrap;
   margin-top: 20px;
 }
-
+.sidebar-contacts__header {
+  color: #79819a;
+  font-size: 0.866rem;
+}
 @media screen and (max-width: 500px) {
-  .main__wrapper {
+  .main__ul {
     position: relative;
     padding: 6px;
   }
