@@ -545,4 +545,9 @@ img {
     align-content: end;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .sidebar-contacts__header {
+    color: #79819a;
+    font-size: 0.866rem;
+    grid-column: span 2 / span 2;
+  }
 }
